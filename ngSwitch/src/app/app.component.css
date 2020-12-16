@@ -1,0 +1,41 @@
+.A{
+    color: red;
+    font-size: 1.3em;
+}
+
+.B{
+    color: blue;
+    font-size: 1.2em;
+}
+.C{
+    color: green;
+    font-size: 1.1em;
+}
+
+table {
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse;
+    border: 1px solid #dddddd; */
+    width: 100%;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+    max-width: 5px;
+  }
+
+  .container{
+     border: 1px solid blue;
+     margin: 10%;
+     margin-top: 0;
+  }
+
+  th{
+      font-size: 1.4em;
+  }
+
+  h2{
+      margin-left: 10%;
+  }
