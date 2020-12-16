@@ -1,0 +1,7 @@
+<div class="container">
+    <button (click)="toggleOn =!toggleOn">{{toggleOn ? 'show text' : 'hide text'}}</button>
+  
+  <div *ngIf="!toggleOn">
+  <p>Demonstrate of structural ngIf</p>
+  </div>
+</div>

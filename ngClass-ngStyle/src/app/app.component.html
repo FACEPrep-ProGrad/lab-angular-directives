@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="box">
+  <h2>This is a Attribute Directives</h2>
+  <hr>
+  <p [ngStyle] = "{'color':'red'}">Attribute Change</p>
+  <p [ngStyle] = "{'color':'blue'}">Attribute Change by Using NgClass</p>
+  <p [ngStyle] = "{'color':'green'}">Attribute Change by Using NgStyle</p>
+<hr>
+  <p   [ngClass]="{'color' : back}">
+    Attribute Change
+</p>
+  <p   [ngClass]="{'color' : back,'brown' : back}">
+    Attribute Change by Using NgClass
+</p>
+  <br>
+  <button (click)="back=!back">Change color </button>
+  <br>
+  <p   [ngClass]="{'color' : back}">
+    Attribute Change
+</p>
+  <p   [ngClass]="{'color' : back,'red' : !back}">
+    Attribute Change by Using NgClass
+</p>
+<!--{{back ? 'off' : 'on'}}  -->
+</div>
+</div>

@@ -1,0 +1,59 @@
+<h2>Demonstrate ngSwitch</h2>
+<div class="container">
+ 
+  <table>
+    <tr>
+      <th>Srl No</th>
+      <th>Student Name</th>
+      <th>Course</th>
+      <th>Grade</th>
+    </tr>
+  </table>
+  <table *ngFor="let person of people" [ngSwitch]="person.Grade"> 
+
+  <tr *ngSwitchCase="'A'"  class="A">
+    <td>{{ person.sno }}  </td>
+    <td>{{ person.name }} </td>
+    <td>{{ person.course }}   </td>
+    <td> {{ person.Grade }} </td>
+  </tr>
+  <tr *ngSwitchCase="'B'"  class="B">
+    <td>{{ person.sno }}  </td>
+    <td>{{ person.name }} </td>
+    <td>{{ person.course }}   </td>
+    <td> {{ person.Grade }} </td>
+  </tr>
+  <tr *ngSwitchCase="'C'"  class="C">
+    <td>{{ person.sno }}  </td>
+    <td>{{ person.name }} </td>
+    <td>{{ person.course }}   </td>
+    <td> {{ person.Grade }} </td>
+  </tr>
+  <tr *ngSwitchDefault>
+    <td>{{ person.sno }}  </td>
+    <td>{{ person.name }} </td>
+    <td>{{ person.course }}   </td>
+    <td> {{ person.Grade }} </td>
+  </tr>
+</table>
+
+</div>
+
+
+
+
+<!-- <ul *ngFor="let person of people"
+    [ngSwitch]="person.Grade"> 
+  <li *ngSwitchCase="'A'" 
+      class="A">{{ person.sno }}        {{ person.name }}         {{ person.course }}        {{ person.Grade }}
+  </li>
+  <li *ngSwitchCase="'B'"
+      class="B">{{ person.name }} ({{ person.course }})
+  </li>
+  <li *ngSwitchCase="'C'"
+      class="C">{{ person.name }} ({{ person.course }})
+  </li>
+  <li *ngSwitchDefault 
+      class="text-warning">{{ person.name }} ({{ person.course }})
+  </li>
+</ul>` -->
